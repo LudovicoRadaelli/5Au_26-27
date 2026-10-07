@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/mathjax-config.js"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+    <script src="../argomenti.js"></script>
+    <title>Compiti per casa</title>
+</head>
+
+<body>
+    <h1>
+        <span id="nav-prev" class="nav-arrow">◃</span>
+        Scheda <span id="scheda-num">3</span>
+        <span id="nav-next" class="nav-arrow">▹</span>
+    </h1>
+
+    <br>
+
+    <h3 class="yellow">Derivate fondamentali</h3>
+    <div class="esempi-container">
+        Di seguito riporto una lista che aggiorneremo volta per volta. Nuovi elementi della lista saranno
+        contraddistinti dal simbolo 🔥.
+        <b>É necessario imparare queste informazioni a memoria. </b>
+        <br>
+        <br>
+        <ul>
+            <li>
+                \(\left[ln(x)\right]' = \dfrac{1}{x}\,\,\,\,\)🔥
+            </li>
+            <br>
+            <li>
+                \(\left[sin(x)\right]' = cos(x)\,\,\,\,\)🔥
+            </li>
+            <br>
+            <li>
+                \(\left[cos(x)\right]' = -sin(x)\,\,\,\,\)🔥
+            </li>
+            <br>
+            <li>
+                \(\left(e^x\right)' = e^x\,\,\,\,\)🔥
+            </li>
+            <br>
+            <li>
+                \(\left(ax + b\right)' = a\,\,\,\,\,\)🔥
+            </li>
+            <br>
+            <li>
+                \(\left(x^{\alpha}\right)' = \alpha\,x^{\alpha - 1}\,\,\,\) con \(\alpha \in
+                \mathbb{R}\,\,\,\,\,\)🔥
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+
+    <h3 class="yellow">Regole di derivazione</h3>
+    <div class="esempi-container">
+        <ul>
+            <li>
+                <b>Derivata delle somma di due funzioni</b>
+                <br>
+                <br>
+                \(\left[f(x) + g(x)\right]' = f'(x) + g'(x)\)🔥
+            </li>
+            <br>
+            <li>
+                <b>Derivata del prodotto tra una costante ed una funzione</b>
+                <br>
+                <br>
+                \(\left[c\,f(x)\right]' = c\,f'(x)\)🔥
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Svolgere le seguenti derivate:
+        <br>
+        <br>
+        <ol type="A" style="font-weight: bold;">
+            <li>
+                \(
+                \,\,\,\,\,\left[2\,sin(x) - 4\,cos(x)\right]'
+                \)
+
+                <br>
+                <br>
+
+                <button id="hintUOYCYfUKuG-button" onclick="showHint(`UOYCYfUKuG`)">Soluzione</button>
+                <div id="hintUOYCYfUKuG" class="hint gray" style="display: none;">
+                    <b class="gray">Soluzione</b>
+                    <br>
+                    \[
+                    \left[2\,sin(x) - 4\,cos(x)\right]' = 2\,cos(x) + 4\,sin(x)
+                    \]
+                </div>
+            </li>
+            <br>
+            <li>
+                \(
+                \,\,\,\,\,\left[3\,e^x + \dfrac{1}{2}\,ln(x)\right]'
+                \)
+
+                <br>
+                <br>
+
+                <button id="hintIWHtAQCtWR-button" onclick="showHint(`IWHtAQCtWR`)">Soluzione</button>
+                <div id="hintIWHtAQCtWR" class="hint gray" style="display: none;">
+                    <b class="gray">Soluzione</b>
+                    <br>
+                    \[
+                    \left[3\,e^x + \dfrac{1}{2}\,ln(x)\right]' = 3\,e^x + \dfrac{1}{2x}
+                    \]
+                </div>
+            </li>
+        </ol>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="yellow">\(\boldsymbol{\big[x^{\alpha}\big]' = \alpha\,x^{\alpha - 1}}\)</h3>
+    <div class="esempi-container">
+        <b style="font-size: 1.3rem;">caso \(\alpha\) intero positivo</b>
+        <br>
+        <br>
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/N1CW1wDLxMM?si=62Q3MZ0MgYuereop"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""></iframe>
+        <br>
+        <br>
+        <b style="font-size: 1.3rem;">caso \(\alpha\) intero negativo</b>
+        <br>
+        <br>
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/kDpE93N0kVI?si=-GDzzaKSaIAaZJOD"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""></iframe>
+        <br>
+        <br>
+        <b>Caso \(\alpha\) frazionario</b>
+        <br>
+        <br>
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/n2HpWwH9Wac?si=mqdEFB7RU57OlCdo"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""></iframe>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Svolgere le seguenti derivate:
+        <br>
+        <br>
+        <ol type="A" style="font-weight: bold;">
+            <li>
+                \(
+                \,\,\,\,\,\left[6x^2 - x + \sqrt{x^3}\right]'
+                \)
+
+                <br>
+                <br>
+
+                <button id="hintGMzhftImbX-button" onclick="showHint(`GMzhftImbX`)">Soluzione</button>
+                <div id="hintGMzhftImbX" class="hint gray" style="display: none;">
+                    <b class="gray">Soluzione</b>
+                    <br>
+                    <div class="formula">
+                        \[
+                        \left[6x^2 - x + \sqrt{x^3}\right]' = 12x - 1 + \dfrac{3}{2}\sqrt{x}
+                        \]
+                    </div>
+                </div>
+            </li>
+            <br>
+            <li>
+                \(
+                \,\,\,\,\,\left[\dfrac{4}{x^2} - \dfrac{5}{x} + 8e^x\right]'
+                \)
+
+                <br>
+                <br>
+
+                <button id="hintiitFoIeNqE-button" onclick="showHint(`iitFoIeNqE`)">Soluzione</button>
+                <div id="hintiitFoIeNqE" class="hint gray" style="display: none;">
+                    <b class="gray">Soluzione</b>
+                    <br>
+                    <div class="formula">
+                        \[
+                        \left[\dfrac{4}{x^2} - \dfrac{5}{x} + 8e^x\right]' = -\dfrac{8}{x^{3}}+\dfrac{5}{x^{2}}+8e^{x}
+                        \]
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </div>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+    <script src="../../js/motoreQuiz.js"></script>
+    <script src="../../js/motoreQuizVideo.js"></script>
+
+    <br>
+    <br>
+
+
+
+
+</body>
+
+</html>
