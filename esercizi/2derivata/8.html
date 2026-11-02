@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">    
+    <script src="../../js/mathjax-config.js"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+    <script src="../argomenti.js"></script>
+    <title>Compiti per casa</title>
+</head>
+
+<body>
+    <h1>
+        <span id="nav-prev" class="nav-arrow">◃</span>
+        Scheda <span id="scheda-num">8</span>
+        <span id="nav-next" class="nav-arrow">▹</span>
+    </h1>
+
+    <br>
+
+    <h3 class="yellow">Funzioni crescenti e decrescenti e derivate</h3>
+            <div class="esempi-container">
+                Per definizione una funzione <b>crescente</b> in un intervallo \(I\) se e solo se
+                per ogni \(a, b \in I\)
+                \[
+                a \lt b \,\,\,\Longrightarrow\,\,\, f(a) \lt f(b)
+                \]
+                <img src="img/img_8_1.png" style="border: 0;">
+                <br>
+                In altre parole, presi due valori successivi \(a\) e \(b\) in \(I\), il valore assunto da \(f\) nel
+                punto a
+                a sinistra, \(f(a)\), è minore del valore assunto da \(f\) nel punto a destra, \(f(b)\): scorrendo verso
+                destra la funzione cresce.
+
+                <br>
+                <br>
+                In modo analogo, una funzione <b>decrescente</b> in un intervallo \(I\) se e solo se
+                per ogni \(a, b \in I\)
+                \[
+                a \lt b \,\,\,\Longrightarrow\,\,\, f(a) \gt f(b)
+                \]
+
+                <b>Teorema</b>
+                <br>
+                <div class="grayBorder">
+                    Sia \(y = f(x)\) una funzione definita su un intervallo \(I\) ed ivi continua e derivabile.
+                    <br>
+                    <br>
+                    \(\boldsymbol{1})\,\,\) Se \(f'(x) \gt 0\) per ogni \(x \in I\) allora \(f\) è crescente in \(I\)
+                    <br>
+                    <br>
+                    \(\boldsymbol{2})\,\,\) Se \(f'(x) \lt 0\) per ogni \(x \in I\) allora \(f\) è decrescente in \(I\)
+                </div>
+                <br>
+                <b>Applicazioni del teorema</b>
+                <br>
+                Consideriamo la funzione
+                \[
+                f(x) = \dfrac{x^3}{3} -x + 1
+                \]
+                Essendo polinomiale il suo dominio è \(\mathbb{R}\) ed in questo insieme è continua e derivabile.
+                La sua derivata è
+                \[
+                f'(x) = x^2 -1
+                \]
+                Studiamo il <u>segno della derivata</u>. Questo ci permettera di capire gli intervalli in cui la
+                funzione è
+                crescente o decrescente.
+                \[
+                \begin{align*}
+                &amp;f'(x) \gt 0
+                \\\\
+                &amp;x^2 -1 \gt 0
+                \end{align*}
+                \]
+                usando il metodo della parabola troviamo che il segno al variare della \(x\) è il seguente
+                <br>
+                <br>
+                <img src="img/img_8_2.png" style="width: 50%; border: 0;">
+                <br>
+
+                Questo ci suggerisce che la funzione è
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        <u>crescente</u> negl'intervalli \((-\infty\,,\,\,-1)\) e \((1\,,\,\,+\infty)\) dove la
+                        derivata ha segno positivo
+                    </li>
+                    <br>
+                    <li>
+                        <u>decrescente</u> in \((-1\,,\,\,1)\) dove la derivata ha segno negativo.
+                    </li>
+                </ul>
+                <br>
+                Utilizzando il linguaggio grafico possiamo scrivere
+                <br>
+                <br>
+                <img src="img/img_8_3.png" style="width: 70%; border: 0;">
+            </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+            <br>
+            <div>
+                Individuiamo gli intervalli di monotonia della funzione
+                \[
+                f(x) = \dfrac{2x -1}{x + 3}
+                \]
+            </div>
+
+            <br>
+            <br>
+
+
+            <button id="hintnWNSzvAbkg-button" onclick="showHint(`nWNSzvAbkg`)">Svolgimento</button>
+            <div id="hintnWNSzvAbkg" class="hint" style="display: none;">
+                <div class="grayBorder">
+                    Individuiamo gli intervalli di monotonia della funzione
+                    \[
+                    f(x) = \dfrac{2x -1}{x + 3}
+                    \]
+
+                    <u><b>Dominio</b></u>
+                    <br>
+                    La funzione \(f\) è definita se
+                    \[
+                    x + 3 \neq 0 \,\,\,\Rightarrow\,\,\, x \neq -3
+                    \]
+                    Il dominio è
+                    \[
+                    D = (-\infty\,,\,-3) \cup (-3\,,\,\,+\infty)
+                    \]
+
+                    <u><b>Continuità</b></u>
+                    <br>
+                    La funzione è continua nel suo dominio in quanto rapporto di funzioni continue.
+                    <br>
+                    <br>
+
+                    <u><b>Derivabilità</b></u>
+                    <br>
+                    La derivata della funzione è
+                    \[
+                    \begin{align*}
+                    f'(x)
+                    &amp;= \dfrac{2 \cdot (x + 3) - (2x - 1)}{(x - 3)^2}
+                    \\\\
+                    &amp;= \dfrac{7}{(x - 3)^2}
+                    \end{align*}
+                    \]
+                    La condizione per la quale la derivata è definita è \(x neq 3\) ed è soddifatta per valori nel
+                    dominio.
+                    La funzione è quindi derivabile in tutto \(D\).
+
+                    <br>
+                    <br>
+
+                    <u><b>Segno derivata</b></u>
+                    <br>
+                    Studiamo il segno della derivata.
+                    \[
+                    \begin{align*}
+                    &amp;f'(x) \gt 0
+                    \\\\
+                    &amp;\dfrac{\overset{\color{red}{+}}{\color{gray}{}\overbrace{\color{red}{}7}}}{\underset{\color{blue}{}+}{\color{gray}{}\underbrace{\color{blue}{}(x
+                    - 3)^2}}} \gt 0
+                    \\\\
+                    &amp;\text{per ogni \(x \in D\)}
+                    \end{align*}
+                    \]
+
+                    Dal segno di \(f'(x)\) deduciamo il seguente schema di monotonia
+                    <br>
+                    <br>
+                    <img src="img/img_8_4.png" style="border: 0; width: 50%;">
+                    <br>
+                    La funzione è
+                    <br>
+                    <br>
+                    <ul>
+                        <li>
+                            crescente negli intervalli \((-\infty\,,\,\,-3)\) e \(\left(-3\,,\,\,+\infty\right)\)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+            <div>
+                Dopo averne individuato il dominio, studiare gli intervalli di monotonia della funzione
+                \[
+                f(x) = ln(x^2 + 1)
+                \]
+            </div>
+
+            <br>
+
+            <div class="gray">
+                <b>Soluzione:</b>
+                <br>
+                La funzione è crescente per \(x \in (0\,,\,\,+\infty)\)
+                <br>
+                La funzione è decrescente per \(x \in (-\infty\,,\,\,-0)\)
+            </div>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+            <br>
+            <div>
+                Individuiamo gli intervalli di monotonia della funzione
+                \[
+                f(x) = ln\left(2x + 5\right)
+                \]
+            </div>
+
+            <br>
+            <br>
+
+            <button id="hintBJZNGjtRPi-button" onclick="showHint(`BJZNGjtRPi`)">Svolgimento</button>
+            <div id="hintBJZNGjtRPi" class="hint" style="display: none;">
+                <div class="grayBorder">
+                    Individuiamo gli intervalli di monotonia della funzione
+                    \[
+                    f(x) = ln\left(2x + 5\right)
+                    \]
+
+                    <u><b>Dominio</b></u>
+                    <br>
+                    La funzione \(f\) è definita se
+                    \[
+                    2x + 5 \gt 0 \,\,\,\Rightarrow\,\,\, x \gt -\dfrac{5}{2}
+                    \]
+                    Il dominio è
+                    \[
+                    D = \left(-\dfrac{5}{2}\,,\,\,+\infty\right)
+                    \]
+
+                    <u><b>Continuità</b></u>
+                    <br>
+                    La funzione è continua nel suo dominio in quanto composizione di funzioni continue.
+                    <br>
+                    <br>
+
+                    <u><b>Derivabilità</b></u>
+                    <br>
+                    Calcoliamo la derivata di \(f\).
+                    <br>
+                    <br>
+                    <div class="slide-container iCNzpPDtRS grayBorder">
+                        <div class="slideiCNzpPDtRS">
+                            \(
+                            \left[ln\left(2x + 5\right)\right]' =
+                            \)
+                            <br>
+                            <br>
+                            <span class="gray">
+                                La funzione è composta. Evidenziamo la funzione più interna
+                            </span>
+                        </div>
+                        <div class="slideiCNzpPDtRS">
+                            \(
+                            \left[ln\left(\color{red}{}2x + 5\color{black}{}\right)\right]' =
+                            \)
+                            <br>
+                            <br>
+                            <span class="gray">
+                                La funzione è composta. Evidenziamo la funzione più interna
+                            </span>
+                        </div>
+                        <div class="slideiCNzpPDtRS">
+                            \(
+                            \left[ln\left(\color{red}{}2x + 5\color{black}{}\right)\right]' =
+                            \)
+                            <br>
+                            <br>
+                            <span class="gray">
+                                Calcoliamo la derivata della funzione più esterna, \(ln(\color{red}{}z\color{gray}{})\)
+                                e valutiamola in \(\color{red}{}z\color{black}{} = \color{red}{}2x + 5\)
+                            </span>
+                        </div>
+                        <div class="slideiCNzpPDtRS">
+                            \(
+                            \left[ln\left(\color{red}{}2x + 5\color{black}{}\right)\right]' = \dfrac{1}{\color{red}{}2x
+                            + 5\color{black}{}} \cdot
+                            \)
+                            <br>
+                            <br>
+                            <span class="gray">
+                                Calcoliamo la derivata della funzione più esterna, \(ln(\color{red}{}z\color{black}{})\)
+                                e valutiamola in \(\color{red}{}z\color{black}{} = \color{red}{}2x + 5\)
+                            </span>
+                        </div>
+                        <div class="slideiCNzpPDtRS">
+                            \(
+                            \left[ln\left(2x + 5\right)\right]' = \dfrac{1}{\color{red}{}2x + 5\color{black}{}} \cdot
+                            \)
+                            <br>
+                            <br>
+                            <span class="gray">
+                                Moltiplichiamo per la derivata della funzione più interna \(\color{red}{}2x + 5\)
+                            </span>
+                        </div>
+                        <div class="slideiCNzpPDtRS">
+                            \(
+                            \left[ln\left(2x + 5\right)\right]' = \dfrac{1}{2x + 5} \cdot 2
+                            \)
+                            <br>
+                            <br>
+                            <span class="gray">
+                                Moltiplichiamo per la derivata della funzione più interna \(\color{red}{}2x + 5\)
+                            </span>
+                        </div>
+                        <div class="slideiCNzpPDtRS">
+                            \(
+                            \left[ln\left(2x + 5\right)\right]' = \dfrac{1}{2x + 5} \cdot 2
+                            \)
+                            <br>
+                            <br>
+                            <span class="gray">
+                                Portiamo il \(2\) al numeratore della frazione.
+                            </span>
+                        </div>
+                        <div class="slideiCNzpPDtRS">
+                            \(
+                            \left[ln\left(2x + 5\right)\right]' = \dfrac{2}{2x + 5}
+                            \)
+                            <br>
+                            <br>
+                            <span class="gray">
+                                Portiamo il \(2\) al numeratore della frazione.
+                            </span>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                        <button id="previousSlide-buttoniCNzpPDtRS" onclick="previousSlide(`iCNzpPDtRS`)">Indietro</button>
+                        <button id="nextSlide-buttoniCNzpPDtRS" onclick="nextSlide(`iCNzpPDtRS`)">Avanti</button>
+                    </div>
+                    <br>
+                    La derivata della funzione è
+                    \[
+                    f'(x) = \dfrac{2}{2x + 5}
+                    \]
+                    La condizione per le quale la derivata è definita è
+                    \[
+                    2x + 5 \neq 0 \,\,\,\Rightarrow\,\,\, x \neq -\dfrac{5}{2}
+                    \]
+                    che è verificata per \(x \in D\).
+                    L'insieme di derviabilità coincide con tutto il dominio \(D\).
+
+                    <br>
+                    <br>
+
+                    <u><b>Segno derivata</b></u>
+                    <br>
+                    Studiamo il segno della derivata in \(D\).
+                    \[
+                    \begin{align*}
+                    &amp;f'(x) \gt 0
+                    \\\\
+                    &amp;\dfrac{2}{2x + 5} \gt 0
+                    \end{align*}
+                    \]
+                    Poiché il numeratore è positivo, la frazione è positiva a patto che il denominatore sia positivo:
+                    \[
+                    \begin{align*}
+                    2x + 5 &amp;\gt 0
+                    \\\\
+                    x &amp;\gt -\dfrac{5}{2}
+                    \end{align*}
+                    \]
+
+                    Dal segno di \(f'(x)\) deduciamo il seguente schema di monotonia
+                    <br>
+                    <br>
+                    <img src="img/img_8_5.png" style="border: 0; width: 70%;">
+                    <br>
+                    La funzione è crescente in tutto il dominio \( D =\left(-\dfrac{5}{2}\,,\,\,+\infty\right)\)
+
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+    <script src="../../js/motoreQuiz.js"></script>
+    <script src="../../js/motoreQuizVideo.js"></script>
+
+    <br>
+    <br>
+
+
+
+
+</body></html>
